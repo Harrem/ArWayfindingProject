@@ -1,42 +1,54 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class SetNavTarget : MonoBehaviour
 {
+
     [SerializeField]
-    private Camera miniCamera;
+    private TMP_Dropdown TargetsDropdown;
     [SerializeField]
-    private GameObject navTargetObject;
+    private List<Target> NavTargetObjects = new();
 
     private NavMeshPath path;
     private LineRenderer line;
+    private Vector3 targetPosition = Vector3.zero;
 
-    private bool lineToggle;
+    private bool lineToggle = false;
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         path = new NavMeshPath();
         line = transform.GetComponent<LineRenderer>();
+        line.enabled = lineToggle;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        if (lineToggle && targetPosition != Vector3.zero)
         {
-            lineToggle = !lineToggle;
-        }
-
-        if (lineToggle)
-        {
-            NavMesh.CalculatePath(transform.position, navTargetObject.transform.position, NavMesh.AllAreas, path);
+            NavMesh.CalculatePath(transform.position, targetPosition, NavMesh.AllAreas, path);
             line.positionCount = path.corners.Length;
             line.SetPositions(path.corners);
-            line.enabled = true;
         }
+    }
+
+    public void SetCurrentNavigationTarget(int selectedValue)
+    {
+        targetPosition = Vector3.zero;
+        string selectedText = TargetsDropdown.options[selectedValue].text;
+        Target currentTarget = NavTargetObjects.Find(x => x.Name.Equals(selectedText));
+        if (currentTarget != null)
+        {
+            targetPosition = currentTarget.positionObject.transform.position;
+        }
+    }
+
+    public void Togglevisibility()
+    {
+        lineToggle = !lineToggle;
+        line.enabled = lineToggle;
     }
 }

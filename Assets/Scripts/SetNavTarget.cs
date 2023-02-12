@@ -15,6 +15,7 @@ public class SetNavTarget : MonoBehaviour
     private NavMeshPath path;
     private LineRenderer line;
     private Vector3 targetPosition = Vector3.zero;
+    public float distanceLeft=0;
 
     private bool lineToggle = false;
 
@@ -23,6 +24,7 @@ public class SetNavTarget : MonoBehaviour
         path = new NavMeshPath();
         line = transform.GetComponent<LineRenderer>();
         line.enabled = lineToggle;
+        Debug.LogWarning( path.status.ToString());
     }
 
     private void Update()
@@ -32,7 +34,10 @@ public class SetNavTarget : MonoBehaviour
             NavMesh.CalculatePath(transform.position, targetPosition, NavMesh.AllAreas, path);
             line.positionCount = path.corners.Length;
             line.SetPositions(path.corners);
+            
         }
+        CalculateDistance();
+        Debug.LogWarning("Distance: "+ distanceLeft);
     }
 
     public void SetCurrentNavigationTarget(int selectedValue)
@@ -50,5 +55,16 @@ public class SetNavTarget : MonoBehaviour
     {
         lineToggle = !lineToggle;
         line.enabled = lineToggle;
+    }
+
+    public void CalculateDistance()
+    {
+        distanceLeft = 0f;
+        foreach (var corner in path.corners)
+        {
+            var dis = Vector3.Distance(transform.position, corner);
+            distanceLeft += dis;
+        }
+        Debug.LogWarning("Distance: "+ distanceLeft);
     }
 }

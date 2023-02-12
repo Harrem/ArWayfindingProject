@@ -21,6 +21,6 @@ public class IndicatorController : MonoBehaviour
         //var rotation = new Quaternion(thisRotation.x, thisRotation.y, arY, thisRotation.w);
         //transform.rotation = rotation;
         transform.rotation = Quaternion.AngleAxis(-arY, Vector3.forward);
-        Debug.LogWarning("y: "+arY+" _ "+ "z: "+transform.rotation.z);
+        //Debug.LogWarning("y: "+arY+" _ "+ "z: "+transform.rotation.z);
     }
 }

@@ -19,7 +19,7 @@ public class SetNavTarget : MonoBehaviour
     private LineRenderer line;
     private Vector3 targetPosition = Vector3.zero;
 
-    private int currentFloor = 1;
+    //private int currentFloor = 1;
 
     private bool lineToggle = false;
 

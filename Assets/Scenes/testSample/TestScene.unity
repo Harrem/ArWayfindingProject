@@ -109,7 +109,7 @@ NavMeshSettings:
     agentRadius: 0.67
     agentHeight: 2.35
     agentSlope: 45
-    agentClimb: 0.3
+    agentClimb: 0.35
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -1109,7 +1109,10 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Positions: []
+  m_Positions:
+  - {x: 0, y: 0.15, z: 20}
+  - {x: 0, y: 0.15, z: 3}
+  - {x: 10, y: 0.15, z: 3}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -1117,8 +1120,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.14959657
-        value: 0.29761887
+        time: 0.19125842
+        value: 0.3055579
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1157,10 +1160,10 @@ LineRenderer:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    numCornerVertices: 0
+    numCornerVertices: 2
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     shadowBias: 0.5
     generateLightingData: 0
   m_UseWorldSpace: 1

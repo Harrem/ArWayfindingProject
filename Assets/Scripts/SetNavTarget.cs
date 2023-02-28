@@ -11,9 +11,16 @@ public class SetNavTarget : MonoBehaviour
     [SerializeField]
     private TMP_Dropdown TargetsDropdown;
     [SerializeField]
+    private TextMeshProUGUI distanceTxt;
+    [SerializeField]
     private List<Target> NavTargetObjects = new();
     [SerializeField]
     private Slider heightLine;
+    [SerializeField]
+    private GameObject miniMap;
+    [SerializeField]
+    private GameObject debugWindow;
+
 
     private NavMeshPath path;
     private LineRenderer line;
@@ -22,6 +29,8 @@ public class SetNavTarget : MonoBehaviour
     //private int currentFloor = 1;
 
     private bool lineToggle = false;
+    private bool miniMapToggle = true;
+    private bool toggleDebugWindow = false;
 
     private void Start()
     {
@@ -38,6 +47,7 @@ public class SetNavTarget : MonoBehaviour
             line.positionCount = path.corners.Length;
             Vector3[] calculatedPath = AddLineOffset();
             line.SetPositions(calculatedPath);
+            distanceTxt.text =  CalculateDistance(path.corners).ToString("F1") + "M";
         }
     }
 
@@ -70,5 +80,25 @@ public class SetNavTarget : MonoBehaviour
     {
         lineToggle = !lineToggle;
         line.enabled = lineToggle;
+    }
+    public void ToggleMiniMap()
+    {
+        miniMapToggle = !miniMapToggle;
+        miniMap.SetActive(miniMapToggle);
+    }
+    public void ToggleDebug()
+    {
+        toggleDebugWindow = !toggleDebugWindow;
+        debugWindow.SetActive(toggleDebugWindow);
+    }
+
+    private float CalculateDistance(Vector3[] path)
+    {
+        float distance = 0f;
+        for (int i = 0; i < path.Length - 1; i++)
+        {
+            distance += Vector3.Distance(path[i], path[i + 1]);
+        }
+        return distance;
     }
 }

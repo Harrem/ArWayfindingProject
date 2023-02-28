@@ -11,6 +11,6 @@ public class SetUiText : MonoBehaviour
     private string fixedText;
     public void OnSliderValueChaned(float numricValue)
     {
-        text.text = $"{fixedText}: {numricValue}";
+        text.text = numricValue.ToString("F2");
     }
 }

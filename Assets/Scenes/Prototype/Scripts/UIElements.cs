@@ -12,8 +12,6 @@ public class UIElements : MonoBehaviour
     private Animator qrAnim;
 
 
-
-
     // Start is called before the first frame update
     void Start()
     {

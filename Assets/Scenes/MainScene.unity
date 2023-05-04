@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7283,7 +7283,7 @@ MonoBehaviour:
   navigationController: {fileID: 271665052}
   line: {fileID: 235369676}
   navigationYOffset: {fileID: 620486449}
-  distanceTxt: {fileID: 278592211}
+  distanceTxt: {fileID: 1315526058}
 --- !u!1 &239053050
 GameObject:
   m_ObjectHideFlags: 0
@@ -40911,6 +40911,175 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315338148}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1315526057
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7961338527233938513, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527233938513, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527233938513, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1406442455}
+    - target: {fileID: 7961338527233938513, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527233938513, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ToggleScanning
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527233938513, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: QrCodeRecenter, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527233938513, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383190, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338527381383402, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338528445619119, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338528445619119, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338528445619119, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1406442455}
+    - target: {fileID: 7961338528445619119, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338528445619119, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ToggleScanning
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338528445619119, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: QrCodeRecenter, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961338528445619119, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+--- !u!114 &1315526058 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7961338527097007967, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+  m_PrefabInstance: {fileID: 1315526057}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1315526059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7961338527322595459, guid: 0bb77523cd57949f587fe67a20882caf, type: 3}
+  m_PrefabInstance: {fileID: 1315526057}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1316276407
 GameObject:
   m_ObjectHideFlags: 0
@@ -43128,7 +43297,7 @@ MonoBehaviour:
   sessionOrigin: {fileID: 170069695}
   cameraManager: {fileID: 398401229}
   targetHandler: {fileID: 1840396897}
-  qrCodeScanningPanel: {fileID: 1474473486}
+  qrCodeScanningPanel: {fileID: 1315526059}
 --- !u!4 &1406442456
 Transform:
   m_ObjectHideFlags: 0
@@ -44088,7 +44257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1431858378
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,15 +6,15 @@ public class ListGenerator : MonoBehaviour
     public GameObject itemPrefab; // the prefab for each item in the list
     public List<string> items; // the list of items to display
     public float itemHeight = 50f;
-    private Color grey = new Color(110,110,110);
+    private Color grey = new Color(110, 110, 110);
 
     void Start()
     {
         RectTransform contentTransform = GetComponent<RectTransform>();
 
-        for (int i = 0; i<30; i++)
+        for (int i = 0; i < 30; i++)
         {
-            items.Add("item: "+ i);
+            items.Add("item: " + i);
         }
         // generate the list items
         for (int i = 0; i < items.Count; i++)
@@ -41,7 +41,7 @@ public class ListGenerator : MonoBehaviour
 
             newItem.GetComponentsInChildren<Image>()[1].enabled = false;
 
-            if(i % 2 == 1)
+            if (i % 2 == 1)
             {
                 newItem.GetComponent<Image>().color = Color.grey;
             }
@@ -54,6 +54,6 @@ public class ListGenerator : MonoBehaviour
     {
         // execute code in response to the user's selection
         Debug.Log("User selected item: " + item);
-        
+
     }
 }

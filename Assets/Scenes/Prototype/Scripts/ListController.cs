@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class ListGenerator : MonoBehaviour
+public class ListController : MonoBehaviour
 {
     public GameObject itemPrefab; // the prefab for each item in the list
+    public NavigationController navController;
     public List<string> items; // the list of items to display
     public TextAsset locationData;
     public float itemHeight = 50f;
@@ -52,9 +53,8 @@ public class ListGenerator : MonoBehaviour
 
     void OnItemClick(Target item)
     {
-        // execute code in response to the user's selection
         Debug.Log("User selected item: " + item.Name);
-
+        navController.TargetPosition = item.Position;
     }
     private IEnumerable<Target> deserializeLocationData()
     {

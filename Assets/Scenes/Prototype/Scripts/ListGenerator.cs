@@ -5,25 +5,25 @@ public class ListGenerator : MonoBehaviour
 {
     public GameObject itemPrefab; // the prefab for each item in the list
     public List<string> items; // the list of items to display
+    public TextAsset locationData;
     public float itemHeight = 50f;
     private Color grey = new Color(110, 110, 110);
-
     void Start()
     {
         RectTransform contentTransform = GetComponent<RectTransform>();
 
-        for (int i = 0; i < 30; i++)
-        {
-            items.Add("item: " + i);
-        }
+        var locations = deserializeLocationData();
+
         // generate the list items
-        for (int i = 0; i < items.Count; i++)
+        items = new List<string>();
+        int i = 0;
+        foreach (var location in locations)
         {
-            // create a new item GameObject
+            // instantiate a new item prefab and set its parent to the content transform
             GameObject newItem = Instantiate(itemPrefab, transform);
 
             // set the text of the item
-            newItem.GetComponentInChildren<Text>().text = items[i];
+            newItem.GetComponentInChildren<Text>().text = location.Name;
             RectTransform itemTransform = newItem.GetComponent<RectTransform>();
             itemTransform.anchoredPosition = new Vector2(0, -i * itemHeight);
             itemTransform.anchorMin = new Vector2(0, 1);
@@ -36,7 +36,6 @@ public class ListGenerator : MonoBehaviour
             itemTransform.offsetMin = new Vector2(0, itemTransform.offsetMin.y);
             itemTransform.offsetMax = new Vector2(0, itemTransform.offsetMax.y);
             // add an event listener to the item
-            int index = i;
 
 
             newItem.GetComponentsInChildren<Image>()[1].enabled = false;
@@ -45,15 +44,20 @@ public class ListGenerator : MonoBehaviour
             {
                 newItem.GetComponent<Image>().color = Color.grey;
             }
-            newItem.GetComponent<Button>().onClick.AddListener(() => OnItemClick(items[index]));
+            newItem.GetComponent<Button>().onClick.AddListener(() => OnItemClick(location));
+            i++;
         }
         contentTransform.sizeDelta = new Vector2(contentTransform.sizeDelta.x, items.Count * itemHeight);
     }
 
-    void OnItemClick(string item)
+    void OnItemClick(Target item)
     {
         // execute code in response to the user's selection
-        Debug.Log("User selected item: " + item);
+        Debug.Log("User selected item: " + item.Name);
 
+    }
+    private IEnumerable<Target> deserializeLocationData()
+    {
+        return JsonUtility.FromJson<TargetWrapper>(locationData.text).TargetList;
     }
 }

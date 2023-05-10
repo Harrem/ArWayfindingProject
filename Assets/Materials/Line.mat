@@ -73,7 +73,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _MaxDistance: 3
+    - _MaxDistance: 15
     - _Metallic: 0
     - _MinDistance: 1
     - _Mode: 0

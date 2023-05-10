@@ -9,6 +9,8 @@ public class ListController : MonoBehaviour
     public TextAsset locationData;
     public float itemHeight = 50f;
     private Color grey = new Color(110, 110, 110);
+    public UIElements ui;
+    public StatsController statsController;
     void Start()
     {
         RectTransform contentTransform = GetComponent<RectTransform>();
@@ -55,6 +57,8 @@ public class ListController : MonoBehaviour
     {
         Debug.Log("User selected item: " + item.Name);
         navController.TargetPosition = item.Position;
+        statsController.destinationText.text = item.Name;
+        ui.closePlaceSelection();
     }
     private IEnumerable<Target> deserializeLocationData()
     {

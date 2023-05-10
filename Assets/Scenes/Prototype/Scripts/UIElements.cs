@@ -24,10 +24,11 @@ public class UIElements : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void openPlaceSelection(){
+    public void openPlaceSelection()
+    {
         placeSelectionPanel.SetActive(true);
         placeAnim.SetTrigger("open");
     }
@@ -35,9 +36,9 @@ public class UIElements : MonoBehaviour
     public void closePlaceSelection()
     {
         placeAnim.SetTrigger("close");
-        WaitAndClosePlace(1);
+        WaitAndClosePlace(0.3f);
     }
-    private IEnumerator WaitAndClosePlace(int sec)
+    private IEnumerator WaitAndClosePlace(float sec)
     {
         yield return new WaitForSeconds(sec);
         placeSelectionPanel.SetActive(false);
@@ -50,7 +51,7 @@ public class UIElements : MonoBehaviour
         qrAnim.SetTrigger("open");
     }
 
-     public void closeQrScanner()
+    public void closeQrScanner()
     {
         qrAnim.SetTrigger("close");
         StartCoroutine(WaitAndCloseQR(0.3f));

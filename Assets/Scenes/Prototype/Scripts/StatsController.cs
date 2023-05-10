@@ -17,45 +17,58 @@ public class StatsController : MonoBehaviour
     public NavigationController navController;
     public Transform selfPosition;
     public Vector3 targetPosition;
+    public GameObject prefab;
+    public bool isMarker = false;
+    GameObject targetMarker;
     // Start is called before the first frame update
     void Start()
     {
         destinationText.text = "Welcome to the University of Charmo";
-
+        targetMarker = new GameObject();
     }
 
     // Update is called once per frame
     void Update()
     {
         targetPosition = navController.getNextPoint();
-        Vector3 directionToTarget = targetPosition - selfPosition.position;
+        targetMarker.transform.position = selfPosition.transform.position;
+        targetMarker.transform.LookAt(targetPosition);
 
-        // float angle = Vector3.Angle(directionToTarget, Vector3.forward);
-        // get the angle between the direction to target and the forward vector
+        // Get the difference in rotation between the two transforms
+        float ang1 = selfPosition.transform.eulerAngles.y;
+        float ang2 = targetMarker.transform.eulerAngles.y;
+        float angleDifference = ang1 - ang2;
 
-        float angle = Mathf.Atan2(directionToTarget.y, directionToTarget.x) * Mathf.Rad2Deg;
-        switch (angle)
+        // Print the angle difference to the console
+        Debug.Log("Rotation difference: " + angleDifference);
+
+        // Print the angle to the console
+
+        switch (angleDifference)
         {
             case float n when (n >= 0 && n <= 45):
-                directionText.text = "Stright";
+                directionText.text = "Stright Foward";
                 break;
             case float n when (n >= 45 && n <= 135):
-                directionText.text = "Left";
+                directionText.text = " Turn Left";
                 break;
             case float n when (n >= 135 && n <= 225):
-                directionText.text = "Back";
+                directionText.text = "Turn Back";
                 break;
             case float n when (n >= 225 && n <= 315):
-                directionText.text = "Right";
+                directionText.text = "Turn Right";
                 break;
             case float n when (n >= 315 && n <= 360):
-                directionText.text = "Stright";
+                directionText.text = "Stright Foward";
                 break;
         }
-        // adjust the angle to account for the rotation of the canvas
-        angle -= marker.transform.eulerAngles.z;
 
         // apply the rotation to the marker using the RectTransform component
-        marker.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        marker.rotation = Quaternion.Euler(new Vector3(0, 0, angleDifference));
+    }
+
+    public void AddMarker()
+    {
+        GameObject marker = Instantiate(prefab, targetPosition, Quaternion.identity);
     }
 }

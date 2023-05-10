@@ -892,6 +892,8 @@ struct Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F;
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
 // UnityEngine.TextCore.Text.SpriteAsset
 struct SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313;
+// StatsController
+struct StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47;
 // System.String
 struct String_t;
 // System.Text.StringBuilder
@@ -2447,12 +2449,12 @@ struct U3CU3Ec_t480832E6E9C0D190B837CC90FB7A34286511D2E4  : public RuntimeObject
 {
 };
 
-// ListController/<>c__DisplayClass6_0
-struct U3CU3Ec__DisplayClass6_0_tACA9154C28D8E71B7002590D1617E17391DE8EFB  : public RuntimeObject
+// ListController/<>c__DisplayClass8_0
+struct U3CU3Ec__DisplayClass8_0_tEDE305D41AA053E4C017B8AC515245FD6B9BDFE1  : public RuntimeObject
 {
-	// Target ListController/<>c__DisplayClass6_0::location
+	// Target ListController/<>c__DisplayClass8_0::location
 	Target_t5E0C0864CEA07701AF639C0AFAC19928DB873FC5* ___location_0;
-	// ListController ListController/<>c__DisplayClass6_0::<>4__this
+	// ListController ListController/<>c__DisplayClass8_0::<>4__this
 	ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05* ___U3CU3E4__this_1;
 };
 
@@ -2550,8 +2552,8 @@ struct U3CWaitAndClosePlaceU3Ed__8_tD4607248F91CCCBB9EDE43EAE22D05F9C2E35FB4  : 
 	int32_t ___U3CU3E1__state_0;
 	// System.Object UIElements/<WaitAndClosePlace>d__8::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// System.Int32 UIElements/<WaitAndClosePlace>d__8::sec
-	int32_t ___sec_2;
+	// System.Single UIElements/<WaitAndClosePlace>d__8::sec
+	float ___sec_2;
 	// UIElements UIElements/<WaitAndClosePlace>d__8::<>4__this
 	UIElements_t96A1B89216B78E391C88BC01519A1808B1BD3A37* ___U3CU3E4__this_3;
 };
@@ -12848,6 +12850,10 @@ struct ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05  : public MonoBe
 	float ___itemHeight_8;
 	// UnityEngine.Color ListController::grey
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___grey_9;
+	// UIElements ListController::ui
+	UIElements_t96A1B89216B78E391C88BC01519A1808B1BD3A37* ___ui_10;
+	// StatsController ListController::statsController
+	StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47* ___statsController_11;
 };
 
 // NavigationController
@@ -12930,6 +12936,12 @@ struct StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47  : public MonoB
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___selfPosition_8;
 	// UnityEngine.Vector3 StatsController::targetPosition
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___targetPosition_9;
+	// UnityEngine.GameObject StatsController::prefab
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___prefab_10;
+	// System.Boolean StatsController::isMarker
+	bool ___isMarker_11;
+	// UnityEngine.GameObject StatsController::targetMarker
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___targetMarker_12;
 };
 
 // TargetFacade
@@ -15622,9 +15634,9 @@ struct U3CU3Ec_t480832E6E9C0D190B837CC90FB7A34286511D2E4_StaticFields
 
 // UnityEngine.Experimental.GlobalIllumination.Lightmapping/<>c
 
-// ListController/<>c__DisplayClass6_0
+// ListController/<>c__DisplayClass8_0
 
-// ListController/<>c__DisplayClass6_0
+// ListController/<>c__DisplayClass8_0
 
 // Internal.Cryptography.OidLookup/<>c
 struct U3CU3Ec_t90F8CB10B454B45A81BE65AA841DD85FE08EA21A_StaticFields
@@ -20827,16 +20839,16 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4231[2] =
 	static_cast<int32_t>(offsetof(Font_tC95270EA3198038970422D78B74A7F2E218A96B6_StaticFields, ___textureRebuilt_4)),static_cast<int32_t>(offsetof(Font_tC95270EA3198038970422D78B74A7F2E218A96B6, ___m_FontTextureRebuildCallback_5)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4233[2] = 
 {
-	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass6_0_tACA9154C28D8E71B7002590D1617E17391DE8EFB, ___location_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass6_0_tACA9154C28D8E71B7002590D1617E17391DE8EFB, ___U3CU3E4__this_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4234[6] = 
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass8_0_tEDE305D41AA053E4C017B8AC515245FD6B9BDFE1, ___location_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass8_0_tEDE305D41AA053E4C017B8AC515245FD6B9BDFE1, ___U3CU3E4__this_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4234[8] = 
 {
-	static_cast<int32_t>(offsetof(ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05, ___itemPrefab_4)),static_cast<int32_t>(offsetof(ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05, ___navController_5)),static_cast<int32_t>(offsetof(ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05, ___items_6)),static_cast<int32_t>(offsetof(ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05, ___locationData_7)),static_cast<int32_t>(offsetof(ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05, ___itemHeight_8)),static_cast<int32_t>(offsetof(ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05, ___grey_9)),};
+	static_cast<int32_t>(offsetof(ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05, ___itemPrefab_4)),static_cast<int32_t>(offsetof(ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05, ___navController_5)),static_cast<int32_t>(offsetof(ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05, ___items_6)),static_cast<int32_t>(offsetof(ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05, ___locationData_7)),static_cast<int32_t>(offsetof(ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05, ___itemHeight_8)),static_cast<int32_t>(offsetof(ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05, ___grey_9)),static_cast<int32_t>(offsetof(ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05, ___ui_10)),static_cast<int32_t>(offsetof(ListController_t4AFE24F8CE677C1E8D4EBC060F4868BECB5ECC05, ___statsController_11)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4235[5] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4236[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4236[9] = 
 {
-	static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___marker_4)),static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___directionText_5)),static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___destinationText_6)),static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___navController_7)),static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___selfPosition_8)),static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___targetPosition_9)),};
+	static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___marker_4)),static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___directionText_5)),static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___destinationText_6)),static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___navController_7)),static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___selfPosition_8)),static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___targetPosition_9)),static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___prefab_10)),static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___isMarker_11)),static_cast<int32_t>(offsetof(StatsController_tFA01C78267DC8301D48ADACCB737CADA55C6FF47, ___targetMarker_12)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4237[4] = 
 {
 	static_cast<int32_t>(offsetof(U3CWaitAndClosePlaceU3Ed__8_tD4607248F91CCCBB9EDE43EAE22D05F9C2E35FB4, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CWaitAndClosePlaceU3Ed__8_tD4607248F91CCCBB9EDE43EAE22D05F9C2E35FB4, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CWaitAndClosePlaceU3Ed__8_tD4607248F91CCCBB9EDE43EAE22D05F9C2E35FB4, ___sec_2)),static_cast<int32_t>(offsetof(U3CWaitAndClosePlaceU3Ed__8_tD4607248F91CCCBB9EDE43EAE22D05F9C2E35FB4, ___U3CU3E4__this_3)),};

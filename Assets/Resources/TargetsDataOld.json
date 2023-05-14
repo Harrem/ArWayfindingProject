@@ -1,0 +1,32 @@
+{
+  "TargetList": [
+    {
+      "Name": "Hall12",
+      "FloorNumber": 1,
+      "Position": {
+        "x": 18.4370003,
+        "y": 5.4000001,
+        "z": 9.9630003
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "Name": "Hall13",
+      "FloorNumber": 1,
+      "Position": {
+        "x": 28.34,
+        "y": 5.4,
+        "z": 9.11
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    }
+  ]
+}

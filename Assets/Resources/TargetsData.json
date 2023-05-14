@@ -1,12 +1,40 @@
 {
   "TargetList": [
     {
-      "Name": "Hall12",
-      "FloorNumber": 1,
+      "Name": "QRFirst",
+      "FloorNumber": 0,
       "Position": {
-        "x": 18.4370003,
-        "y": 5.4000001,
-        "z": 9.9630003
+        "x": -16.0879993,
+        "y": 0.481999993,
+        "z": 15.6429996
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 321.600006,
+        "z": 0
+      }
+    },
+    {
+      "Name": "QRThird",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 9.5,
+        "y": 0.699999988079071,
+        "z": -1.0
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 90,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "QRSecond",
+      "FloorNumber": 0,
+      "Position": {
+        "x": -0.0529999994,
+        "y": 8.76399994,
+        "z": 27.6989994
       },
       "Rotation": {
         "x": 0,
@@ -15,12 +43,54 @@
       }
     },
     {
-      "Name": "Hall13",
+      "Name": "Computer Science",
+      "FloorNumber": 3,
+      "Position": {
+        "x": -0.0529999994,
+        "y": 8.76399994,
+        "z": 27.6989994
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "Name": "English Department",
+      "FloorNumber": 3,
+      "Position": {
+        "x": 3.82999992,
+        "y": 8.76399994,
+        "z": 29.4500008
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "Name": "Library",
+      "FloorNumber": 2,
+      "Position": {
+        "x": 9.65999985,
+        "y": 4.09899998,
+        "z": -6.62599993
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "Cafeteria",
       "FloorNumber": 1,
       "Position": {
-        "x": 28.34,
-        "y": 5.4,
-        "z": 9.11
+        "x": 9.65999985,
+        "y": 0.00800000038,
+        "z": -6.62599993
       },
       "Rotation": {
         "x": 0.0,

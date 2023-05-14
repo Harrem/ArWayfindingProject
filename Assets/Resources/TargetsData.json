@@ -1,26 +1,12 @@
 {
   "TargetList": [
     {
-      "Name": "QRFirst",
+      "Name": "QrCodeFirst",
       "FloorNumber": 0,
       "Position": {
-        "x": -16.0879993,
-        "y": 0.481999993,
-        "z": 15.6429996
-      },
-      "Rotation": {
-        "x": 0,
-        "y": 321.600006,
-        "z": 0
-      }
-    },
-    {
-      "Name": "QRThird",
-      "FloorNumber": 0,
-      "Position": {
-        "x": 9.5,
-        "y": 0.699999988079071,
-        "z": -1.0
+        "x": 8.5,
+        "y": 0.699999988,
+        "z": -1.11899996
       },
       "Rotation": {
         "x": 0.0,
@@ -29,12 +15,26 @@
       }
     },
     {
-      "Name": "QRSecond",
+      "Name": "QrCodeSecond",
       "FloorNumber": 0,
       "Position": {
-        "x": -0.0529999994,
-        "y": 8.76399994,
-        "z": 27.6989994
+        "x": 8.5,
+        "y": 4.91900015,
+        "z": -1.11899996
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 90,
+        "z": 0
+      }
+    },
+    {
+      "Name": "QrCodeThird",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 8.5,
+        "y": 9.05000019,
+        "z": -1.11899996
       },
       "Rotation": {
         "x": 0,
@@ -43,12 +43,26 @@
       }
     },
     {
-      "Name": "Computer Science",
+      "Name": "Tomar",
       "FloorNumber": 3,
       "Position": {
-        "x": -0.0529999994,
+        "x": 11.4049997,
+        "y": 0.200000003,
+        "z": 36
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "Name": "Computer Science Department",
+      "FloorNumber": 3,
+      "Position": {
+        "x": 0.180000007,
         "y": 8.76399994,
-        "z": 27.6989994
+        "z": 28.4899998
       },
       "Rotation": {
         "x": 0,
@@ -62,7 +76,7 @@
       "Position": {
         "x": 3.82999992,
         "y": 8.76399994,
-        "z": 29.4500008
+        "z": 31.2399998
       },
       "Rotation": {
         "x": 0,
@@ -88,13 +102,55 @@
       "Name": "Cafeteria",
       "FloorNumber": 1,
       "Position": {
-        "x": 9.65999985,
+        "x": 12.7399998,
         "y": 0.00800000038,
-        "z": -6.62599993
+        "z": -8.68000031
       },
       "Rotation": {
         "x": 0.0,
-        "y": 0.0,
+        "y": 314.160004,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "Hall 12",
+      "FloorNumber": 1,
+      "Position": {
+        "x": 17.8999996,
+        "y": 5.21700001,
+        "z": 11.79
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 314.160004,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "Hall 13",
+      "FloorNumber": 2,
+      "Position": {
+        "x": 28.1000004,
+        "y": 5.21700001,
+        "z": 11.79
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 314.160004,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "Hall 14",
+      "FloorNumber": 1,
+      "Position": {
+        "x": 39.4399986,
+        "y": 5.21700001,
+        "z": 11.79
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 314.160004,
         "z": 0.0
       }
     }

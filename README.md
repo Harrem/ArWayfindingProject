@@ -69,7 +69,7 @@ If you have any questions or need assistance with the AR Indoor Navigation App, 
   - Harem Mhamad: [haremmhamad99@gmail.com](mailto:haremmhamad99@gmail.com)
   - Hawdang Najah: [hawdangnajah31@gmail.com](mailto:hawdangnajah31@gmail.com)
  
-- LinkedIn: [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/https://www.linkedin.com/in/harrem-m-jalal-a0a329135](https://www.linkedin.com/in/harrem-m-jalal-a0a329135)
+- LinkedIn: [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/https://www.linkedin.com/in/harrem-m-jalal-a0a329135](https://www.linkedin.com/in/harrem-m-jalal-a0a329135))
 - LinkedIn: [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/Harrem)
 - WhatsApp: [![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat-brightgreen?logo=whatsapp)](https://wa.me/+9647703845087)
 

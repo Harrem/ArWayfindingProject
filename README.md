@@ -1,4 +1,4 @@
-# Project Name
+# AR Wayfinding For Charmo University Campus
 
 [![Unity](https://img.shields.io/badge/Unity-2021.3-blue?logo=unity)](https://unity.com/)
 [![ARCore](https://img.shields.io/badge/ARCore-1.36-blue?logo=google)](https://developers.google.com/ar)
